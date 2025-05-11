@@ -7,7 +7,7 @@ import CursorIcon from "../../components/icons/home/CursorIcon";
 export default function Home() {
   return (
     <>
-      <div className="flex items-center h-[75vh] relative -top-[15%] left-[10%] 2xl:-top-[20%] 2xl:left-[5%]">
+      <div className="flex items-center h-[75vh] relative -top-[15%] left-[10%] 2xl:-top-[15%] 3xl:-top-[20%] 2xl:left-[5%]">
         <div className="flex flex-col w-max gap-2.5 z-100  underline toRightAnimation pb-5">
           <span className="text-sm 2xl:text-base">
             desenvolvedor de software

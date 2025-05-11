@@ -34,10 +34,11 @@
 }
 @media (min-width: 1536px) {
   .btn {
-    background-color: var(--second-color);
+    background-color: transparent;
     color: var(--primary-color);
     font-weight: bold;
-    border: none;
+    border: solid 1px var(--second-color);
+
     cursor: pointer;
     border-radius: 8px;
     width: 7rem;
@@ -53,11 +54,10 @@
 }
 @media (max-width: 1536px) {
   .btn {
-    background-color: var(--second-color);
-    color: var(--primary-color);
+    background-color: transparent;
     font-weight: bold;
     font-size: 12px;
-    border: none;
+    border: solid 1px var(--second-color);
     cursor: pointer;
     border-radius: 8px;
     width: 5rem;

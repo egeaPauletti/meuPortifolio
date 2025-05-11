@@ -9,6 +9,7 @@ import NavBar from "./desktop/components/NavBar";
 import MediaBar from "./desktop/components/MediaBar";
 import LogoWithTitle from "./desktop/components/LogoWithTitle";
 import About from "./desktop/pages/aboutPage/About";
+import Projects from "./desktop/pages/projectPage/Projects";
 
 function renderLoader() {
   return <PreLoader />;
@@ -25,7 +26,7 @@ function renderApp() {
             <Route path="/sobre" element={<About />} />
             <Route path="/hard" element={<></>} />
             <Route path="/soft" element={<></>} />
-            <Route path="/projetos" element={<></>} />
+            <Route path="/projetos" element={<Projects />} />
             <Route path="/contato" element={<></>} />
           </Routes>
           <NavBar />

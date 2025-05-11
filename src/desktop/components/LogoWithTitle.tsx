@@ -4,7 +4,7 @@ export default function LogoWithTitle() {
   return (
     <>
       <Link to="/">
-        <div className="flex items-center gap-2.5 toRightAnimation cursor-pointer">
+        <div className="flex items-center gap-2.5 toRightAnimation cursor-pointer z-100 absolute">
           <div className="hidden 2xl:flex">
             <Logo size={60} />
           </div>
