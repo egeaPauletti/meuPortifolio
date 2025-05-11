@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+.toBottomAnimation2s {
+  animation: toBottom 2s ease;
+}
+
+.toBottomAnimation3s {
+  animation: toBottom 2s ease;
+}
+
+.toBottomAnimation4s {
+  animation: toBottom 2s ease;
+}
+
+.toBottomAnimation5s {
+  animation: toBottom 2s ease;
+}
+
+.toBottomAnimation6s {
+  animation: toBottom 2s ease;
+}
+
+.toBottomAnimation7s {
+  animation: toBottom 2s ease;
+}
+
+@keyframes toBottom {
+  from {
+    transform: translateY(-1000%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@media (min-width: 1536px) {
+  .btn {
+    background-color: var(--second-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 7rem;
+    height: 2rem;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: var(--second-color);
+      box-shadow: 0 0 4px 5px #bdaa82;
+      color: var(--primary-color);
+    }
+  }
+}
+@media (max-width: 1536px) {
+  .btn {
+    background-color: var(--second-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 5rem;
+    height: 1.5rem;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: var(--second-color);
+      box-shadow: 0 0 4px 5px #bdaa82;
+      color: var(--primary-color);
+    }
+  }
+}

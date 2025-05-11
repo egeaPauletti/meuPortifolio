@@ -1,7 +1,7 @@
-import GithubIcon from "./icons/GithubIcon";
-import InstagramIcon from "./icons/InstagramIcon";
-import LinkedinIcon from "./icons/LinkedinIcon";
-import WhatsappIcon from "./icons/WhatsappIcon";
+import GithubIcon from "./icons/mediaBar/GithubIcon";
+import InstagramIcon from "./icons/mediaBar/InstagramIcon";
+import LinkedinIcon from "./icons/mediaBar/LinkedinIcon";
+import WhatsappIcon from "./icons/mediaBar/WhatsappIcon";
 
 export default function MediaBar() {
   return (

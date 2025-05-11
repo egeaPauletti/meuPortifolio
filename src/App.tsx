@@ -1,13 +1,14 @@
 import "../src/index.css";
 //
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as x, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 //
 import PreLoader from "./desktop/components/PreLoader";
-import Home from "./desktop/pages/Home";
+import Home from "./desktop/pages/homePage/Home";
 import NavBar from "./desktop/components/NavBar";
 import MediaBar from "./desktop/components/MediaBar";
 import LogoWithTitle from "./desktop/components/LogoWithTitle";
+import About from "./desktop/pages/aboutPage/About";
 
 function renderLoader() {
   return <PreLoader />;
@@ -19,19 +20,16 @@ function renderApp() {
       <div className="w-screen h-screen flex justify-center items-center">
         <div className="w-[92.5%] h-[92.5%]">
           <LogoWithTitle />
-          <Router>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/sobre" element={<></>} />
-              <Route path="/hard" element={<></>} />
-              <Route path="/soft" element={<></>} />
-              <Route path="/projetos" element={<></>} />
-              <Route path="/contato" element={<></>} />
-            </Routes>
-
-            <NavBar />
-            <MediaBar />
-          </Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/sobre" element={<About />} />
+            <Route path="/hard" element={<></>} />
+            <Route path="/soft" element={<></>} />
+            <Route path="/projetos" element={<></>} />
+            <Route path="/contato" element={<></>} />
+          </Routes>
+          <NavBar />
+          <MediaBar />
           <div className="bgSecColor w-[5%] h-[0.2rem] absolute bottom-11"></div>
           <div className="bgSecColor w-[5%] h-[0.2rem] absolute top-11 right-[10%]"></div>
           <div className="bgSecColor w-[5%] h-[0.2rem] absolute top-11 right-[17%]"></div>

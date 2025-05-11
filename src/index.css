@@ -286,3 +286,14 @@ body {
     transform: translateY(0);
   }
 }
+
+.typing-text-container {
+  color: var(--primary-color);
+  padding: 1rem 0;
+  white-space: pre;
+}
+
+.typing-text {
+  display: inline-block;
+  border-right: 3px solid var(--second-color);
+}
