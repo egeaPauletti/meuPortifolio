@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+.lineBottom {
+  border-bottom: solid 0.2rem #ebc577;
+}
+
+.espelhado {
+  transform: scaleX(-1);
+  transform-origin: center; /* opcional, para inverter em torno do centro */
+}
+
+.translateHover {
+  cursor: pointer;
+  transition: 1s ease;
+  &:hover {
+    transform: rotateZ(-15deg);
+  }
+}
+
+.underline {
+  text-decoration: none;
+
+  &::after {
+    position: relative;
+    content: "";
+    bottom: -8%;
+    right: 0;
+    border-radius: 20px;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--second-color);
+
+    transition: width 0.4s ease, left 0.4s ease;
+    right: 0;
+    animation: underline 2s forwards;
+  }
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
