@@ -7,7 +7,7 @@ import CursorIcon from "../../components/icons/home/CursorIcon";
 export default function Home() {
   return (
     <>
-      <div className="flex items-center h-[75vh] relative -top-[15%] left-[10%] 2xl:-top-[15%] 3xl:-top-[20%] 2xl:left-[5%]">
+      <div className="flex items-center h-[75vh] relative -top-[10%] left-[10%] 2xl:-top-[15%] 2xl:left-[5%]">
         <div className="flex flex-col w-max gap-2.5 z-100  underline toRightAnimation pb-5">
           <span className="text-sm 2xl:text-base">
             desenvolvedor de software
@@ -30,7 +30,7 @@ export default function Home() {
         </div>
 
         <Link to="/sobre">
-          <div className="absolute top-[35%] left-[45%]  toBottomAnimation translateHover">
+          <div className="absolute top-[35%] left-[40%] 2xl:left-[45%]  toBottomAnimation translateHover">
             <div className="relative -top-2.5 -left-6">
               <CursorIcon size={20} color="second" />
             </div>
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </Link>
         <Link to="/sobre">
-          <div className="absolute top-[85%] 2xl:top-[85%] 2xl:left-[10%] toTopAnimation2 translateHover">
+          <div className="absolute top-[85%] left-[10%] 2xl:top-[85%] 2xl:left-[10%] toTopAnimation2 translateHover">
             <div className="relative -top-2.5 left-6 espelhado">
               <CursorIcon size={20} color="primary" />
             </div>

@@ -14,7 +14,7 @@ export default function About() {
   return (
     <>
       <div className="flex items-center h-[75vh] relative -top-[5%] left-[10%] 2xl:-top-[15%] 2xl:left-[5%]">
-        <div className="flex flex-col relative top-0 left-0 2xl:top-[15%] 3xl:top-[5%] 2xl:left-[5%]">
+        <div className="flex flex-col relative left-0 top-[10%] 2xl:left-[5%]">
           <div>
             <TypingText
               textLine1="Sobre mim"

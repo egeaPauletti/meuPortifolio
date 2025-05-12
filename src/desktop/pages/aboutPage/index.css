@@ -37,8 +37,8 @@
     background-color: transparent;
     color: var(--primary-color);
     font-weight: bold;
+    font-size: 0.9rem;
     border: solid 1px var(--second-color);
-
     cursor: pointer;
     border-radius: 8px;
     width: 7rem;
@@ -55,8 +55,9 @@
 @media (max-width: 1536px) {
   .btn {
     background-color: transparent;
+    color: var(--primary-color);
     font-weight: bold;
-    font-size: 12px;
+    font-size: 0.7rem;
     border: solid 1px var(--second-color);
     cursor: pointer;
     border-radius: 8px;
