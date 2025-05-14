@@ -10,6 +10,7 @@ import MediaBar from "./desktop/components/MediaBar";
 import LogoWithTitle from "./desktop/components/LogoWithTitle";
 import About from "./desktop/pages/aboutPage/About";
 import Projects from "./desktop/pages/projectPage/Projects";
+import HardSkills from "./desktop/pages/hardPage/HardSkills";
 
 function renderLoader() {
   return <PreLoader />;
@@ -24,7 +25,7 @@ function renderApp() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sobre" element={<About />} />
-            <Route path="/hard" element={<></>} />
+            <Route path="/hard" element={<HardSkills />} />
             <Route path="/soft" element={<></>} />
             <Route path="/projetos" element={<Projects />} />
             <Route path="/contato" element={<></>} />
@@ -46,7 +47,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setPreLoaderAtivo(false); //4 segundos
-    }, 4000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);

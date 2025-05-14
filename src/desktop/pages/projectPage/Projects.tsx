@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./index.css";
 import "../../../index.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 import ProjectDesc from "../../components/ProjectDesc";
 import ArrowIcon from "../../components/icons/projects/ArrowIcon";
@@ -49,10 +49,7 @@ export default function Projects() {
 
   return (
     <>
-      <div
-        // Isso força o React a "recriar" essa árvore DOM
-        className="flex items-center h-screen relative -top-[15%] left-[10%] 2xl:-top-[20%] 2xl:left-[5%]"
-      >
+      <div className="flex items-center h-screen relative -top-[15%] left-[10%] 2xl:-top-[20%] 2xl:left-[5%]">
         <div className="container absolute top-[60%] 2xl:top-[60%] left-[6%] 2xl:left-[7%] testeanima">
           <div className="card absolute -left-70 2xl:-left-90 codingQuest"></div>
           <div className="card absolute left-20 2xl:left-40"></div>

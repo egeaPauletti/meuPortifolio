@@ -37,16 +37,6 @@ export default function NavBar() {
             </li>
             <li className="nav-itemList">
               <NavLink
-                to="/soft"
-                className={({ isActive }) =>
-                  isActive ? "nav-link active" : "nav-link"
-                }
-              >
-                Soft Skills
-              </NavLink>
-            </li>
-            <li className="nav-itemList">
-              <NavLink
                 to="/projetos"
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"

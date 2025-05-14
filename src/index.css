@@ -201,6 +201,8 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-image: url("./assets/bg.png");
+  background-size: cover;
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
@@ -296,4 +298,32 @@ body {
 .typing-text {
   display: inline-block;
   border-right: 3px solid var(--second-color);
+}
+
+.progress-container {
+  width: 100%;
+  height: 1.5rem;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--second-color);
+  width: 0;
+  transition: width 0.1s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.progress-text {
+  padding: 0 10px;
+  font-size: 14px;
 }

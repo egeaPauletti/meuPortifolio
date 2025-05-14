@@ -22,12 +22,6 @@ export default function MediaBar() {
           </li>
           <li className="hoverMediaBar">
             <div className="flex gap-2 items-center firaCode underlineMediaBar">
-              <InstagramIcon size={20} />
-              <span className="text-sm ">instagram</span>
-            </div>
-          </li>
-          <li className="hoverMediaBar">
-            <div className="flex gap-2 items-center firaCode underlineMediaBar">
               <WhatsappIcon size={20} />
               <span className="text-sm ">whatsapp</span>
             </div>

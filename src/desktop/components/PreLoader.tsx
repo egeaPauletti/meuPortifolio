@@ -1,24 +1,73 @@
-import "../../index.css";
+import { useEffect, useState } from "react";
+import TypingTerminal from "../components/WrittenTerminal"; // ajuste o caminho conforme necessário
+import ProgressBar from "../components/ProgresBar";
+import CircleIcon from "./icons/preLoader/circleIcon";
 
-export default function PreLoader() {
+const ChainedTerminalSpans = () => {
+  const [visibleIndex, setVisibleIndex] = useState(0);
+  const interval = 1700; // tempo entre os blocos (ms)
+
+  useEffect(() => {
+    if (visibleIndex < 6) {
+      const timer = setTimeout(() => {
+        setVisibleIndex((prev) => prev + 1);
+      }, interval);
+      return () => clearTimeout(timer);
+    }
+  }, [visibleIndex]);
+
   return (
-    <>
-      <div className="loading-page">
-        <svg
-          className="svgPreLoader rotate"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-        >
-          <path d="M415.44 512h-95.11L212.12 357.46v91.1L125.69 512H28V29.82L68.47 0h108.05l123.74 176.13V63.45L386.69 0h97.69v461.5zM38.77 35.27V496l72-52.88V194l215.5 307.64h84.79l52.35-38.17h-78.27L69 13zm82.54 466.61l80-58.78v-101l-79.76-114.4v220.94L49 501.89h72.34zM80.63 10.77l310.6 442.57h82.37V10.77h-79.75v317.56L170.91 10.77zM311 191.65l72 102.81V15.93l-72 53v122.72z" />
-        </svg>
-        <svg
-          className="svgPreLoader rotate2"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-        >
-          <path d="M415.44 512h-95.11L212.12 357.46v91.1L125.69 512H28V29.82L68.47 0h108.05l123.74 176.13V63.45L386.69 0h97.69v461.5zM38.77 35.27V496l72-52.88V194l215.5 307.64h84.79l52.35-38.17h-78.27L69 13zm82.54 466.61l80-58.78v-101l-79.76-114.4v220.94L49 501.89h72.34zM80.63 10.77l310.6 442.57h82.37V10.77h-79.75v317.56L170.91 10.77zM311 191.65l72 102.81V15.93l-72 53v122.72z" />
-        </svg>
+    <div className="loading-page">
+      <div>
+        <div className="flex gap-5 mb-2.5">
+          <div className="flex gap-2">
+            <CircleIcon size={15} />
+            <CircleIcon size={15} />
+            <CircleIcon size={15} />
+          </div>
+          <span>~/portifolio-terminal</span>
+        </div>
+        <div className="flex flex-col space-y-2 w-200 h-100 thirdColor  bg-[#3a3a3a] p-10 rounded-lg shadow-[#202020] shadow-xl">
+          <div className="flex flex-col">
+            <span className="secColor">Terminal Portifolio v1.0.0</span>
+            <span className="priColor opacity-50">
+              Digite seu nome para continuar...
+            </span>
+          </div>
+
+          {visibleIndex >= 1 && (
+            <span>
+              <TypingTerminal text="Gabriel Pauletti Egea" />
+            </span>
+          )}
+
+          {visibleIndex >= 2 && (
+            <div className="flex flex-col">
+              <span className="priColor">
+                Olá, <span className="secColor">Gabriel Pauletti Egea</span>!!!
+                Carregando portifólio...
+              </span>
+            </div>
+          )}
+
+          {visibleIndex >= 3 && (
+            <span>
+              <TypingTerminal text="npm run dev" />
+            </span>
+          )}
+
+          {visibleIndex >= 4 && (
+            <div className="flex flex-col gap-5">
+              <span className="priColor opacity-50">
+                Inicializando portifólio...
+              </span>
+              <ProgressBar />
+            </div>
+          )}
+        </div>
       </div>
-    </>
+    </div>
   );
-}
+};
+
+export default ChainedTerminalSpans;

@@ -37,7 +37,7 @@ export default function About() {
               Desenvolvimento de Sistemas, o que confirmou minha escolha
               profissional. Tenho interesse em explorar diversas áreas da
               programação, como desenvolvimento web e mobile, automações e
-              segurança, etren outros.
+              segurança, entre outros.
             </p>
             <p className="max-w-90 2xl:max-w-150 text-justify"></p>
           </div>
