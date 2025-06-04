@@ -41,6 +41,7 @@
     border-radius: 8px;
     box-shadow: 20px 30px 10px rgba(0, 0, 0, 0.28);
     transform: skew(-25deg);
+    z-index: 0;
     &:hover {
       opacity: 1;
     }

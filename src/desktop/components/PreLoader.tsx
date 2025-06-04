@@ -27,7 +27,7 @@ const ChainedTerminalSpans = () => {
           </div>
           <span>~/portifolio-terminal</span>
         </div>
-        <div className="flex flex-col space-y-2 w-200 h-100 thirdColor  bg-[#3a3a3a] p-10 rounded-lg shadow-[#202020] shadow-xl">
+        <div className="flex flex-col w-170 h-80 thirdColor  bg-[#2e2e2e] p-[5%] rounded-lg shadow-[#202020] text-[0.8rem]">
           <div className="flex flex-col">
             <span className="secColor">Terminal Portifolio v1.0.0</span>
             <span className="priColor opacity-50">
@@ -42,7 +42,7 @@ const ChainedTerminalSpans = () => {
           )}
 
           {visibleIndex >= 2 && (
-            <div className="flex flex-col">
+            <div className="flex flex-col text-[0.8rem]">
               <span className="priColor">
                 Olá, <span className="secColor">Gabriel Pauletti Egea</span>!!!
                 Carregando portifólio...

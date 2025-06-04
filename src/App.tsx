@@ -1,16 +1,17 @@
 import "../src/index.css";
 //
-import { BrowserRouter as x, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 //
 import PreLoader from "./desktop/components/PreLoader";
-import Home from "./desktop/pages/homePage/Home";
 import NavBar from "./desktop/components/NavBar";
 import MediaBar from "./desktop/components/MediaBar";
 import LogoWithTitle from "./desktop/components/LogoWithTitle";
+import Home from "./desktop/pages/homePage/Home";
 import About from "./desktop/pages/aboutPage/About";
 import Projects from "./desktop/pages/projectPage/Projects";
 import HardSkills from "./desktop/pages/hardPage/HardSkills";
+import Contact from "./desktop/pages/contactPage/Contact";
 
 function renderLoader() {
   return <PreLoader />;
@@ -28,7 +29,7 @@ function renderApp() {
             <Route path="/hard" element={<HardSkills />} />
             <Route path="/soft" element={<></>} />
             <Route path="/projetos" element={<Projects />} />
-            <Route path="/contato" element={<></>} />
+            <Route path="/contato" element={<Contact />} />
           </Routes>
           <NavBar />
           <MediaBar />
@@ -46,7 +47,7 @@ function App() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setPreLoaderAtivo(false); //4 segundos
+      setPreLoaderAtivo(false);
     }, 10000);
 
     return () => clearTimeout(timer);

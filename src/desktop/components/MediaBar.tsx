@@ -1,5 +1,4 @@
 import GithubIcon from "./icons/mediaBar/GithubIcon";
-import InstagramIcon from "./icons/mediaBar/InstagramIcon";
 import LinkedinIcon from "./icons/mediaBar/LinkedinIcon";
 import WhatsappIcon from "./icons/mediaBar/WhatsappIcon";
 
@@ -39,12 +38,6 @@ export default function MediaBar() {
             <div className="flex gap-2 items-center firaCode underlineMediaBar">
               <LinkedinIcon size={13} />
               <span className="text-[12px] ">linkedIn</span>
-            </div>
-          </li>
-          <li className="hoverMediaBar">
-            <div className="flex gap-2 items-center firaCode underlineMediaBar">
-              <InstagramIcon size={13} />
-              <span className="text-[12px] ">instagram</span>
             </div>
           </li>
           <li className="hoverMediaBar">

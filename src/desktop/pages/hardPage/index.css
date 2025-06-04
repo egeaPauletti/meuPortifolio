@@ -1,185 +1,110 @@
-/* From Uiverse.io by Smit-Prajapati */
-.card2 {
-  width: 300px;
-  height: 200px;
-  background: #243137;
-  position: relative;
-  display: grid;
-  place-content: center;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
-}
+@media (min-width: 1536px) {
+  .hardItem {
+    width: 8rem;
+    height: 3rem;
+    background: var(--third-color);
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 0.5rem;
 
-#logo-main,
-#logo-second {
-  height: 100%;
-}
+    & span {
+      z-index: 1;
+    }
 
-#logo-main {
-  fill: #bd9f67;
-}
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1.5rem;
+      height: 400%;
+      animation: rotBG 8s linear infinite;
+      transition: all 0.2s linear;
+    }
 
-#logo-second {
-  padding-bottom: 10px;
-  fill: none;
-  stroke: #bd9f67;
-  stroke-width: 1px;
-}
-
-.border {
-  position: absolute;
-  inset: 0px;
-  border: 2px solid #bd9f67;
-  opacity: 0;
-  transform: rotate(10deg);
-  transition: all 0.5s ease-in-out;
-}
-
-.bottom-text {
-  position: absolute;
-  left: 50%;
-  bottom: 13px;
-  transform: translateX(-50%);
-  font-size: 6px;
-  text-transform: uppercase;
-  padding: 0px 5px 0px 8px;
-  color: #bd9f67;
-  background: #243137;
-  opacity: 0;
-  letter-spacing: 7px;
-  transition: all 0.5s ease-in-out;
-}
-
-.content {
-  transition: all 0.5s ease-in-out;
-}
-
-.content .logo {
-  height: 35px;
-  position: relative;
-  width: 33px;
-  overflow: hidden;
-  transition: all 1s ease-in-out;
-}
-
-.content .logo .logo1 {
-  height: 33px;
-  position: absolute;
-  left: 0;
-}
-
-.content .logo .logo2 {
-  height: 33px;
-  position: absolute;
-  left: 33px;
-}
-
-.content .logo .trail {
-  position: absolute;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-}
-
-.content .logo-bottom-text {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 30px;
-  color: #bd9f67;
-  padding-left: 8px;
-  font-size: 11px;
-  opacity: 0;
-  letter-spacing: none;
-  transition: all 0.5s ease-in-out 0.5s;
-}
-
-.card2:hover {
-  border-radius: 0;
-  transform: scale(1.1);
-}
-
-.card2:hover .logo {
-  width: 134px;
-  animation: opacity 1s ease-in-out;
-}
-
-.card2:hover .border {
-  inset: 15px;
-  opacity: 1;
-  transform: rotate(0);
-}
-
-.card2:hover .bottom-text {
-  letter-spacing: 3px;
-  opacity: 1;
-  transform: translateX(-50%);
-}
-
-.card2:hover .content .logo-bottom-text {
-  opacity: 1;
-  letter-spacing: 9.5px;
-}
-
-.card2:hover .trail {
-  animation: trail 1s ease-in-out;
-}
-
-@keyframes opacity {
-  0% {
-    border-right: 1px solid transparent;
+    &::after {
+      content: "";
+      position: absolute;
+      background: var(--third-color);
+      inset: 0.15rem;
+      border-radius: 0.5rem;
+    }
+  }
+  .topLine {
+    border-top: 0.2rem solid var(--second-color);
+    padding-top: 3%;
   }
 
-  10% {
-    border-right: 1px solid #bd9f67;
+  .rightLine {
+    border-right: 0.2rem solid var(--second-color);
+    padding-top: 3%;
+  }
+}
+@media (max-width: 1536px) {
+  .hardItem {
+    width: 6rem;
+    height: 2rem;
+    background: var(--third-color);
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 0.5rem;
+
+    & span {
+      z-index: 1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1rem;
+      height: 400%;
+      animation: rotBG 8s linear infinite;
+      transition: all 0.2s linear;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: var(--third-color);
+      inset: 0.15rem;
+      border-radius: 0.5rem;
+    }
   }
 
-  80% {
-    border-right: 1px solid #bd9f67;
+  .topLine {
+    border-top: 0.1rem solid var(--second-color);
+    padding-top: 3%;
   }
 
-  100% {
-    border-right: 1px solid transparent;
+  .rightLine {
+    border-right: 0.1rem solid var(--second-color);
+    /* padding-top: 3%; */
   }
 }
 
-@keyframes trail {
-  0% {
-    background: linear-gradient(
-      90deg,
-      rgba(189, 159, 103, 0) 90%,
-      rgb(189, 159, 103) 100%
-    );
-    opacity: 0;
+@keyframes rotBG {
+  from {
+    transform: rotate(0deg);
   }
 
-  30% {
-    background: linear-gradient(
-      90deg,
-      rgba(189, 159, 103, 0) 70%,
-      rgb(189, 159, 103) 100%
-    );
-    opacity: 1;
-  }
-
-  70% {
-    background: linear-gradient(
-      90deg,
-      rgba(189, 159, 103, 0) 70%,
-      rgb(189, 159, 103) 100%
-    );
-    opacity: 1;
-  }
-
-  95% {
-    background: linear-gradient(
-      90deg,
-      rgba(189, 159, 103, 0) 90%,
-      rgb(189, 159, 103) 100%
-    );
-    opacity: 0;
+  to {
+    transform: rotate(360deg);
   }
 }
+
+/* .rightLine {
+  &::after {
+    content: "";
+    width: 20rem;
+    height: 0.2rem;
+    display: block;
+    position: absolute;
+    top: 0.7rem;
+    left: 4rem;
+    background-color: var(--second-color);
+  }
+} */

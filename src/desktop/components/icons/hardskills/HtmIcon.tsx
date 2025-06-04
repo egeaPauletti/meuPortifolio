@@ -1,14 +1,15 @@
 interface logoProps {
   size: number;
 }
-const CodeIcon: React.FC<logoProps> = ({ size }) => {
+
+const HtmlIcon: React.FC<logoProps> = ({ size }) => {
   return (
     <>
       <svg
-        viewBox="0 0 24 24"
+        width={size}
+        viewBox="0 0 32 32"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        width={size}
       >
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g
@@ -18,16 +19,15 @@ const CodeIcon: React.FC<logoProps> = ({ size }) => {
         ></g>
         <g id="SVGRepo_iconCarrier">
           {" "}
+          <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>{" "}
+          <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>{" "}
           <path
-            d="M7 8L3 11.6923L7 16M17 8L21 11.6923L17 16M14 4L10 20"
-            stroke="#ebc577"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
+            fill="white"
           ></path>{" "}
         </g>
       </svg>
     </>
   );
 };
-export default CodeIcon;
+export default HtmlIcon;
