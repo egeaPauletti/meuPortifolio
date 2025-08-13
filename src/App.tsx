@@ -1,6 +1,6 @@
 import "../src/index.css";
 //
-import { BrowserRouter as Routes, Route } from "react-router-dom";
+import { Routes, Route,  } from "react-router-dom";
 import { useState, useEffect } from "react";
 //
 import PreLoader from "./desktop/components/PreLoader";
@@ -22,7 +22,7 @@ function renderApp() {
     <>
       <div className="w-screen h-screen flex justify-center items-center">
         <div className="w-[92.5%] h-[92.5%]">
-          <LogoWithTitle />
+          <LogoWithTitle />        
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sobre" element={<About />} />
