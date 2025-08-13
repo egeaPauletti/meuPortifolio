@@ -46,8 +46,8 @@ export default function Projects() {
 
   return (
     <>
-      <div className="flex items-center h-screen relative -top-[15%] left-[10%] 2xl:-top-[20%] 2xl:left-[5%]">
-        <div className="container absolute top-[70%] 2xl:top-[60%] left-[6%] 2xl:left-[7%] testeanima">
+      <div className=" flex items-center h-screen relative -top-[15%] left-[10%] 2xl:-top-[20%] 2xl:left-[5%]">
+        <div className="z-50 container absolute top-[70%] 2xl:top-[60%] left-[6%] 2xl:left-[7%] testeanima">
           <div className="card absolute -left-70 2xl:-left-90 codingQuest"></div>
           <div className="card absolute left-20 2xl:left-40"></div>
           <div className="card absolute left-110 2xl:left-170"></div>
@@ -57,7 +57,7 @@ export default function Projects() {
           <ProjectDesc title={title} description={description} />
         </div>
 
-        <div className="absolute top-135 2xl:top-240 2xl:left-20">
+        <div className="absolute top-135 2xl:top-240 2xl:left-20 z-100">
           <div className="hidden 2xl:flex gap-8">
             <button className="espelhado arrow" onClick={handlePrevious}>
               <ArrowIcon size={30} />
