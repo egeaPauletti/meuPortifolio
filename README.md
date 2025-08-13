@@ -12,7 +12,7 @@ Este repositório contém o código-fonte do meu **portfólio pessoal**, onde ap
 
 ## 🔗 Acesse o Portfólio
 
-[🔗 Link para o portfólio](#)
+[🔗 Link para o portfólio](https://egeapauletti.github.io/meuPortifolio/)
 
 ## 📩 Contato
 
