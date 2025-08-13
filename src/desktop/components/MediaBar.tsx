@@ -10,19 +10,30 @@ export default function MediaBar() {
           <li className="hoverMediaBar">
             <div className="flex gap-2 items-center firaCode underlineMediaBar">
               <GithubIcon size={20} />
-              <span className="text-sm ">github</span>
+              <a href="https://github.com/egeaPauletti" target="_blank">
+                <span className="text-sm ">github</span>
+              </a>
             </div>
           </li>
+
           <li className="hoverMediaBar">
             <div className="flex gap-2 items-center firaCode underlineMediaBar">
               <LinkedinIcon size={20} />
-              <span className="text-sm ">linkedIn</span>
+              <a
+                href="https://www.linkedin.com/in/egeapauletti"
+                target="_blank"
+              >
+                <span className="text-sm ">linkedIn</span>
+              </a>
             </div>
           </li>
+
           <li className="hoverMediaBar">
-            <div className="flex gap-2 items-center firaCode underlineMediaBar">
-              <WhatsappIcon size={20} />
-              <span className="text-sm ">whatsapp</span>
+            <div className="underlineMediaBar ">
+              <div className="flex gap-2 items-center firaCode  hover-image">
+                <WhatsappIcon size={20} />
+                <span className="text-sm ">whatsapp</span>
+              </div>
             </div>
           </li>
         </ul>
@@ -30,20 +41,31 @@ export default function MediaBar() {
         <ul className="flex 2xl:hidden gap-25">
           <li className="hoverMediaBar">
             <div className="flex gap-2 items-center firaCode underlineMediaBar">
-              <GithubIcon size={13} />
-              <span className="text-[12px] ">github</span>
+              <GithubIcon size={20} />
+              <a href="https://github.com/egeaPauletti" target="_blank">
+                <span className="text-sm ">github</span>
+              </a>
             </div>
           </li>
+
           <li className="hoverMediaBar">
             <div className="flex gap-2 items-center firaCode underlineMediaBar">
-              <LinkedinIcon size={13} />
-              <span className="text-[12px] ">linkedIn</span>
+              <LinkedinIcon size={20} />
+              <a
+                href="https://www.linkedin.com/in/egeapauletti"
+                target="_blank"
+              >
+                <span className="text-sm ">linkedIn</span>
+              </a>
             </div>
           </li>
+
           <li className="hoverMediaBar">
-            <div className="flex gap-2 items-center firaCode underlineMediaBar">
-              <WhatsappIcon size={13} />
-              <span className="text-[12px] ">whatsapp</span>
+            <div className="underlineMediaBar ">
+              <div className="flex gap-2 items-center firaCode  hover-image">
+                <WhatsappIcon size={20} />
+                <span className="text-sm ">whatsapp</span>
+              </div>
             </div>
           </li>
         </ul>
