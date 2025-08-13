@@ -1,10 +1,8 @@
 interface cardProps {
-  icon?: React.Component;
   text: string;
-  color?: string;
 }
 
-const CardHard: React.FC<cardProps> = ({ text, icon, color }) => {
+const CardHard: React.FC<cardProps> = ({ text }) => {
   return (
     <>
       <div className="card2">

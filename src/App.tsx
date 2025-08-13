@@ -1,6 +1,6 @@
 import "../src/index.css";
 //
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 //
 import PreLoader from "./desktop/components/PreLoader";
