@@ -1,4 +1,4 @@
-# 📌 Portfólio | Front-End Developer
+# 📌 Portfólio | Developer
 
 Este repositório contém o código-fonte do meu **portfólio pessoal**, onde apresento meus projetos, habilidades e experiências como **desenvolvedor front-end**. Construído com **HTML, CSS, JavaScript, TypeScript e ReactJS**, o site é totalmente responsivo e otimizado para oferecer uma experiência fluida e intuitiva.
 
