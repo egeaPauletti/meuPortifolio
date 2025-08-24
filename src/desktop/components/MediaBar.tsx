@@ -61,12 +61,14 @@ export default function MediaBar() {
           </li>
 
           <li className="hoverMediaBar">
-            <div className="underlineMediaBar ">
-              <div className="flex gap-2 items-center firaCode  hover-image">
-                <WhatsappIcon size={20} />
-                <span className="text-sm ">whatsapp</span>
+            <a href="https://wa.me/qr/C3GAJUTLRX5HM1" target="_blank">
+              <div className="underlineMediaBar ">
+                <div className="flex gap-2 items-center firaCode  hover-image">
+                  <WhatsappIcon size={20} />
+                  <span className="text-sm ">whatsapp</span>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
         </ul>
       </div>
