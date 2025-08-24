@@ -1,6 +1,6 @@
-# 📌 Portfólio | Front-End Developer (Em Desenvolvimento)
+# 📌 Portfólio | Developer
 
-Este repositório contém o código-fonte do meu **portfólio pessoal**, onde apresento meus projetos, habilidades e experiências como **desenvolvedor front-end**. Construído com **HTML, CSS, JavaScript, TypeScript e ReactJS**, o site é totalmente responsivo e otimizado para oferecer uma experiência fluida e intuitiva.
+Este repositório contém o código-fonte do meu **portfólio pessoal**, onde apresento meus projetos, habilidades e experiências como **desenvolvedor**.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -12,7 +12,7 @@ Este repositório contém o código-fonte do meu **portfólio pessoal**, onde ap
 
 ## 🔗 Acesse o Portfólio
 
-[🔗 Link para o portfólio](#)
+[🔗 Link para o portfólio](https://egeapauletti.github.io/meuPortifolio/)
 
 ## 📩 Contato
 
