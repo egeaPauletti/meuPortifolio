@@ -48,7 +48,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setPreLoaderAtivo(false);
-    }, 1000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
