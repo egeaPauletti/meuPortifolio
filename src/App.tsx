@@ -1,17 +1,17 @@
 import "../src/index.css";
 //
-import { Routes, Route,  } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 //
-import PreLoader from "./desktop/components/PreLoader";
-import NavBar from "./desktop/components/NavBar";
-import MediaBar from "./desktop/components/MediaBar";
 import LogoWithTitle from "./desktop/components/LogoWithTitle";
-import Home from "./desktop/pages/homePage/Home";
+import MediaBar from "./desktop/components/MediaBar";
+import NavBar from "./desktop/components/NavBar";
+import PreLoader from "./desktop/components/PreLoader";
 import About from "./desktop/pages/aboutPage/About";
-import Projects from "./desktop/pages/projectPage/Projects";
-import HardSkills from "./desktop/pages/hardPage/HardSkills";
 import Contact from "./desktop/pages/contactPage/Contact";
+import HardSkills from "./desktop/pages/hardPage/HardSkills";
+import Home from "./desktop/pages/homePage/Home";
+import Projects from "./desktop/pages/projectPage/Projects";
 
 function renderLoader() {
   return <PreLoader />;
@@ -22,7 +22,7 @@ function renderApp() {
     <>
       <div className="w-screen h-screen flex justify-center items-center">
         <div className="w-[92.5%] h-[92.5%]">
-          <LogoWithTitle />        
+          <LogoWithTitle />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sobre" element={<About />} />
@@ -48,7 +48,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setPreLoaderAtivo(false);
-    }, 10000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);

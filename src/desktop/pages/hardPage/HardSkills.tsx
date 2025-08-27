@@ -1,20 +1,21 @@
 import "./index.css";
 //
-import TypingText from "../../components/WrittenTitle";
 import HardItem from "../../components/HardItem";
-import ReactIcon from "../../components/icons/hardskills/ReactIcon";
-import JSIcon from "../../components/icons/hardskills/JSIcon";
 import CSSIcon from "../../components/icons/hardskills/CSSIcon";
-import HtmlIcon from "../../components/icons/hardskills/HtmIcon";
-import TailwindIcon from "../../components/icons/hardskills/TailIcon";
-import TypeIcon from "../../components/icons/hardskills/TypeIcon";
-import NodeIcon from "../../components/icons/hardskills/NodeIcon";
-import JavaIcon from "../../components/icons/hardskills/Java";
-import PHPIcon from "../../components/icons/hardskills/PHPIcon";
-import MySqlIcon from "../../components/icons/hardskills/MySqlIcon";
-import MongoDBIcon from "../../components/icons/hardskills/MongoDBIcon";
+import ExpressIcon from "../../components/icons/hardskills/ExpressIcon";
 import FigmaIcon from "../../components/icons/hardskills/FigmaIcon";
 import GitIcon from "../../components/icons/hardskills/GitIcon";
+import HtmlIcon from "../../components/icons/hardskills/HtmIcon";
+import JSIcon from "../../components/icons/hardskills/JSIcon";
+import MongoDBIcon from "../../components/icons/hardskills/MongoDBIcon";
+import MySqlIcon from "../../components/icons/hardskills/MySqlIcon";
+import NestIcon from "../../components/icons/hardskills/NestIcon";
+import NodeIcon from "../../components/icons/hardskills/NodeIcon";
+import PrismaIcon from "../../components/icons/hardskills/PrismaIcon";
+import ReactIcon from "../../components/icons/hardskills/ReactIcon";
+import TailwindIcon from "../../components/icons/hardskills/TailIcon";
+import TypeIcon from "../../components/icons/hardskills/TypeIcon";
+import TypingText from "../../components/WrittenTitle";
 
 export default function HardSkills() {
   return (
@@ -93,14 +94,14 @@ export default function HardSkills() {
                         <HardItem
                           color="#E76F00"
                           text="Java"
-                          component={() => <JavaIcon size={25} />}
+                          component={() => <ExpressIcon size={25} />}
                         />
                       </div>
                       <div>
                         <HardItem
                           color="#777bb3"
                           text="PHP"
-                          component={() => <PHPIcon size={25} />}
+                          component={() => <NestIcon size={25} />}
                         />
                       </div>
                     </div>
@@ -225,16 +226,23 @@ export default function HardSkills() {
                       </div>
                       <div>
                         <HardItem
-                          color="#E76F00"
-                          text="Java"
-                          component={() => <JavaIcon size={25} />}
+                          color="#FFF"
+                          text="Express"
+                          component={() => <ExpressIcon size={25} />}
                         />
                       </div>
                       <div>
                         <HardItem
-                          color="#777bb3"
-                          text="PHP"
-                          component={() => <PHPIcon size={25} />}
+                          color="#ff0844"
+                          text="Nest"
+                          component={() => <NestIcon size={25} />}
+                        />
+                      </div>
+                      <div>
+                        <HardItem
+                          color="#007acc"
+                          text="Prisma"
+                          component={() => <PrismaIcon size={25} />}
                         />
                       </div>
                     </div>
