@@ -1,23 +1,26 @@
 import { useState } from "react";
-import "./index.css";
 import "../../../index.css";
 import ProjectDesc from "../../components/ProjectDesc";
 import ArrowIcon from "../../components/icons/projects/ArrowIcon";
+import "./index.css";
 
 export default function Projects() {
-  const projetos: { [key: string]: { title: string; description: string } } = {
+  const projetos: { [key: string]: { title: string; description: string, link: string } } = {
     projeto1: {
       title: "Coding Quest",
       description:
         "A Coding Quest é uma plataforma web gamificada voltada para o ensino de lógica de programação. Desenvolvida para iniciantes e estudantes da área de tecnologia, a plataforma oferece suporte a diversas linguagens e traz uma experiência de aprendizado mais dinâmica por meio de desafios diários, níveis progressivos organizados em mundos e um sistema de pontuação com XP. O objetivo é tornar o processo de aprendizagem mais envolvente, acessível e eficaz, utilizando recursos visuais e mecânicas inspiradas em jogos para estimular o progresso contínuo.",
+      link: "https://github.com/egeaPauletti"
     },
     projeto2: {
       title: "Projeto Beta",
       description: "Descrição do Projeto Beta.",
+      link: "https://github.com/egeaPauletti"
     },
     projeto3: {
       title: "Projeto Gama",
       description: "Descrição do Projeto Gama.",
+      link: "https://github.com/egeaPauletti"
     },
   };
 
@@ -42,19 +45,19 @@ export default function Projects() {
   };
 
   const chaveAtual = chaves[indexAtual];
-  const { title, description } = projetos[chaveAtual];
+  const { title, description, link } = projetos[chaveAtual];
 
   return (
     <>
       <div className=" flex items-center h-screen relative -top-[15%] left-[10%] 2xl:-top-[20%] 2xl:left-[5%]">
-        <div className="z-50 container absolute top-[70%] 2xl:top-[60%] left-[6%] 2xl:left-[7%] testeanima">
+        <div className="z-50 container absolute top-[70%] 2xl:top-[60%] left-[6%] 2xl:left-[7%] testeanima max-sm:top-[150%] max-sm:left-[50%]">
           <div className="card absolute -left-70 2xl:-left-90 codingQuest"></div>
           <div className="card absolute left-20 2xl:left-40"></div>
           <div className="card absolute left-110 2xl:left-170"></div>
           <div className="card absolute left-200 2xl:left-300"></div>
         </div>
         <div key={componentKey}>
-          <ProjectDesc title={title} description={description} />
+          <ProjectDesc title={title} description={description} link={link} />
         </div>
 
         <div className="absolute top-135 2xl:top-240 2xl:left-20 z-100">

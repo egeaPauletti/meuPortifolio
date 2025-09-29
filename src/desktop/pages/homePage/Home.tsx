@@ -14,8 +14,8 @@ export default function Home() {
           </span>
           <div className="flex flex-col">
             <div>
-              <span className="text-xl 2xl:text-3xl rocknroll">pauletti</span>
-              <span className="text-xl 2xl:text-3xl rocknroll secColor">
+              <span className="text-xl 2xl:text-3xl max-sm:text-lg rocknroll">pauletti</span>
+              <span className="text-xl 2xl:text-3xl max-sm:text-lg rocknroll secColor">
                 {".dev( )"}
               </span>
             </div>
@@ -23,15 +23,15 @@ export default function Home() {
               Gabriel Pauletti Egea
             </span>
           </div>
-          <span className="text-3xl 2xl:text-5xl  font-bold">
+          <span className="text-3xl 2xl:text-5xl max-sm:text-2xl  font-bold">
             Transformando <span className="secColor">ideias</span>
             <br /> <span className="secColor"> e projetos </span>em realidade!
           </span>
         </div>
 
         <Link to="/sobre">
-          <div className="absolute top-[35%] left-[40%] 2xl:left-[45%]  toBottomAnimation translateHover">
-            <div className="relative -top-2.5 -left-6">
+          <div className="absolute top-[35%] left-[40%] 2xl:left-[45%] max-sm:left-[50%] max-sm:top-[25%] toBottomAnimation translateHover">
+            <div className="relative -top-2.5 -left-6 max-sm:-left-5">
               <CursorIcon size={20} color="second" />
             </div>
             <span className="bgSecColor text-[0.7rem] p-2 rounded-lg 2xl:text-base  2xl:p-3  thirdColor font-bold">
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </Link>
         <Link to="/sobre">
-          <div className="absolute top-[85%] left-[10%] 2xl:top-[85%] 2xl:left-[10%] toTopAnimation2 translateHover">
+          <div className="absolute top-[85%] left-[10%] 2xl:top-[85%] 2xl:left-[10%] max-sm:-left-[10%] max-sm:top-[75%] toTopAnimation2 translateHover">
             <div className="relative -top-2.5 left-6 espelhado">
               <CursorIcon size={20} color="primary" />
             </div>

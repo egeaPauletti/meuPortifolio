@@ -5,7 +5,7 @@ import WhatsappIcon from "./icons/mediaBar/WhatsappIcon";
 export default function MediaBar() {
   return (
     <>
-      <div className="absolute bottom-10 right-40 toTopAnimation2">
+      <div className="absolute bottom-10 max-sm:bottom-14 right-40 max-sm:right-13 toTopAnimation2 ">
         <ul className="hidden 2xl:flex gap-25">
           <li className="hoverMediaBar">
             <div className="flex gap-2 items-center firaCode underlineMediaBar">
@@ -38,7 +38,7 @@ export default function MediaBar() {
           </li>
         </ul>
 
-        <ul className="flex 2xl:hidden gap-25">
+        <ul className="flex 2xl:hidden gap-25 max-sm:gap-8">
           <li className="hoverMediaBar">
             <div className="flex gap-2 items-center firaCode underlineMediaBar">
               <GithubIcon size={20} />

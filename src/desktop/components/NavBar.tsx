@@ -4,7 +4,7 @@ export default function NavBar() {
     <>
       <div>
         <nav className="h-screen">
-          <ul className="flex flex-col text-[10px] text-end gap-5 top-0 right-10 absolute h-full justify-center nav-ul ">
+          <ul className="flex flex-col text-[10px] text-end gap-5 top-0 right-10 max-sm:right-3 absolute h-full justify-center nav-ul z-100 ">
             <li className="nav-itemList ">
               <NavLink
                 to="/"

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import TypingTerminal from "../components/WrittenTerminal"; // ajuste o caminho conforme necessário
 import ProgressBar from "../components/ProgresBar";
+import TypingTerminal from "../components/WrittenTerminal";
 import CircleIcon from "./icons/preLoader/circleIcon";
 
 const ChainedTerminalSpans = () => {
   const [visibleIndex, setVisibleIndex] = useState(0);
-  const interval = 1700; // tempo entre os blocos (ms)
+  const interval = 1700;
 
   useEffect(() => {
     if (visibleIndex < 6) {
@@ -17,24 +17,29 @@ const ChainedTerminalSpans = () => {
   }, [visibleIndex]);
 
   return (
-    <div className="loading-page">
-      <div>
-        <div className="flex gap-5 mb-2.5">
+    <div className="loading-page flex items-center justify-center min-h-screen px-4 sm:px-6">
+      <div className="w-full max-w-2xl">
+        {/* Top Bar */}
+        <div className="flex flex-wrap gap-5 mb-2.5 text-sm sm:text-base">
           <div className="flex gap-2">
             <CircleIcon size={15} />
             <CircleIcon size={15} />
             <CircleIcon size={15} />
           </div>
-          <span>~/portifolio-terminal</span>
+          <span className="truncate">~/portifolio-terminal</span>
         </div>
-        <div className="flex flex-col w-170 h-80 thirdColor  bg-[#2e2e2e] p-[5%] rounded-lg shadow-[#202020] text-[0.8rem]">
-          <div className="flex flex-col">
+
+        {/* Terminal Box */}
+        <div className="flex flex-col w-full bg-[#2e2e2e] p-4 sm:p-6 rounded-lg shadow-md text-[0.75rem] sm:text-[0.85rem] overflow-hidden">
+          {/* Initial Terminal Text */}
+          <div className="flex flex-col mb-2">
             <span className="secColor">Terminal Portifolio v1.0.0</span>
             <span className="priColor opacity-50">
               Digite seu nome para continuar...
             </span>
           </div>
 
+          {/* Conditionally rendered spans */}
           {visibleIndex >= 1 && (
             <span>
               <TypingTerminal text="Gabriel Pauletti Egea" />
@@ -44,8 +49,7 @@ const ChainedTerminalSpans = () => {
           {visibleIndex >= 2 && (
             <div className="flex flex-col text-[0.8rem]">
               <span className="priColor">
-                Olá, <span className="secColor">Gabriel Pauletti Egea</span>!!!
-                Carregando portifólio...
+                Olá, <span className="secColor">Gabriel Pauletti Egea</span>!!! Carregando portifólio...
               </span>
             </div>
           )}
@@ -57,10 +61,8 @@ const ChainedTerminalSpans = () => {
           )}
 
           {visibleIndex >= 4 && (
-            <div className="flex flex-col gap-5">
-              <span className="priColor opacity-50">
-                Inicializando portifólio...
-              </span>
+            <div className="flex flex-col gap-5 mt-2">
+              <span className="priColor opacity-50">Inicializando portifólio...</span>
               <ProgressBar />
             </div>
           )}

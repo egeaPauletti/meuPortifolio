@@ -16,8 +16,8 @@ export default function About() {
               speed={70}
             />
           </div>
-          <div className="flex flex-col gap-5 relative text-[0.7rem] 2xl:text-sm toTopAnimation underline">
-            <p className="max-w-100 2xl:max-w-140  ">
+          <div className="flex flex-col gap-5 max-sm:gap-10 relative text-[0.7rem] 2xl:text-sm max-sm:text-[10px] toTopAnimation underline">
+            <p className="max-w-100 2xl:max-w-140 max-sm:max-w-[75%] ">
               Meu nome é Gabriel e sou apaixonado por tecnologia. Desde pequeno,
               sempre gostei de videogames e computadores, e com o tempo cresceu
               minha curiosidade sobre como eram desenvolvidos os jogos,
@@ -26,7 +26,7 @@ export default function About() {
               tarde, comecei a estudar desenvolvimento web pela plataforma
               Alura, área com a qual me identifiquei de imediato.
             </p>
-            <p className="max-w-100 2xl:max-w-140 ">
+            <p className="max-w-100 2xl:max-w-140 max-sm:max-w-[75%]">
               Após concluir o Ensino Médio, iniciei a faculdade de Análise e
               Desenvolvimento de Sistemas, o que confirmou minha escolha
               profissional. Tenho interesse em explorar diversas áreas da
