@@ -20,8 +20,8 @@ import TypingText from "../../components/WrittenTitle";
 export default function HardSkills() {
   return (
     <>
-      <div className="flex items-center h-screen relative -top-[15%] left-[10%] 2xl:-top-[15%] 2xl:left-[5%] max-sm:overflow-y-auto">
-        <div className="hidden max-sm:flex flex-col relative left-0 top-[20%] pb-10">
+      <div className="flex items-center h-screen relative -top-[15%] left-[10%] 2xl:-top-[15%] 2xl:left-[5%]">
+        <div className="hidden max-sm:flex flex-col relative left-0 top-[10%] pb-15 max-sm:overflow-y-auto">
           <div className="flex flex-col">
             <div>
               <TypingText textLine1="Minhas" textLine2="Hard Skills" />

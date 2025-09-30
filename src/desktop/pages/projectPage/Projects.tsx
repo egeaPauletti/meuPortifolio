@@ -49,18 +49,18 @@ export default function Projects() {
 
   return (
     <>
-      <div className=" flex items-center h-screen relative -top-[15%] left-[10%] 2xl:-top-[20%] 2xl:left-[5%]">
-        <div className="z-50 container absolute top-[70%] 2xl:top-[60%] left-[6%] 2xl:left-[7%] testeanima max-sm:top-[150%] max-sm:left-[50%]">
+      <div className=" flex items-center h-screen relative -top-[15%] left-[10%] 2xl:-top-[20%] 2xl:left-[5%] overflow">
+        <div className="z-90 container absolute top-[70%] 2xl:top-[60%] left-[6%] 2xl:left-[7%] testeanima max-sm:top-[150%] max-sm:left-[50%]">
           <div className="card absolute -left-70 2xl:-left-90 codingQuest"></div>
           <div className="card absolute left-20 2xl:left-40"></div>
           <div className="card absolute left-110 2xl:left-170"></div>
           <div className="card absolute left-200 2xl:left-300"></div>
         </div>
-        <div key={componentKey}>
+        <div key={componentKey} className="">
           <ProjectDesc title={title} description={description} link={link} />
         </div>
 
-        <div className="absolute top-135 2xl:top-240 2xl:left-20 z-100">
+        <div className="absolute sm:top-135 2xl:top-240 2xl:left-20 z-100 max-sm:bottom-30">
           <div className="hidden 2xl:flex gap-8">
             <button className="espelhado arrow" onClick={handlePrevious}>
               <ArrowIcon size={30} />
