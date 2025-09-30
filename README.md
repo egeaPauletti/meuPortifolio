@@ -1,14 +1,17 @@
-# 📌 Portfólio | Developer
+<h1 align="center">Portfólio | Developer</h1>
 
-Este repositório contém o código-fonte do meu **portfólio pessoal**, onde apresento meus projetos, habilidades e experiências como **desenvolvedor**.
+<p align="center">
+    <img src="https://skillicons.dev/icons?i=react,typescript,tailwind,vite" />
+</p>
+<div align="center">
+  Um projeto React, Typescript, Vite e Tailwind!
+</div>
+<div>
+<h1 align="center"></h1>
+</div>
+<img src="/public/repoImg.png" alt="imagem da tela inicial do portfólio">
 
-## 🚀 Tecnologias Utilizadas
-
-- ✅ **HTML5 & CSS3**
-- ✅ **ReactJS**
-- ✅ **JavaScript (ES6+) & TypeScript**
-- ✅ **TailwindCSS & Styled Components**
-- ✅ **Vite**
+> Este repositório contém o código-fonte do meu **portfólio pessoal**, onde apresento meus projetos, habilidades e experiências como **desenvolvedor**.
 
 ## 🔗 Acesse o Portfólio
 
